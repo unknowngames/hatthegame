@@ -113,6 +113,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="153a5b69-f81f-4254-a4b3-4566b8d057ff"
+            isDerived="false"
+            sourceEndRoleName="Главное окно"
+            targetEndRoleName="Окно статистики"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+              LastKnownName="Окно статистики"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68ff2c9d-2651-4397-aa3b-dfb29d017a24"
+                  name="Главное окно"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8da3cc6d-b307-48c6-9841-0b21cc6bc700"
+                  name="Окно статистики"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </subsystem>
     </packageHasNamedElement>
@@ -197,20 +236,20 @@
         </suppliersInternal>
         <targetEnds>
           <association
-            Id="8fa9b12e-713f-4a15-be9c-fa890b105d7c"
+            Id="2e77a7d6-b6f6-43e5-a114-770e19476a72"
             isDerived="false"
             sourceEndRoleName="Окно игры"
-            targetEndRoleName="Окно меню"
+            targetEndRoleName="Окно статистики"
             isLeaf="false"
             isAbstract="false">
             <subsystemMoniker
-              Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
-              LastKnownName="Окно меню"
+              Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+              LastKnownName="Окно статистики"
               LastKnownLocation="DesignModelingProject.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="153a0598-c873-4b85-88ad-3f54b3daa180"
+                  Id="1ba094f9-4575-438b-8993-6173a398c0e1"
                   name="Окно игры"
                   isLeaf="false"
                   isStatic="false"
@@ -223,8 +262,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e0c18497-7804-4386-9b20-dfe58b944811"
-                  name="Окно меню"
+                  Id="ec5befe6-ccb8-4ace-b517-e8f87d3c00a2"
+                  name="Окно статистики"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -236,20 +275,21 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="7ca52ad4-201d-4a42-9897-ba1c5b859f88"
+            Id="ea1d5cea-c077-4759-a03d-696316787838"
             isDerived="false"
             sourceEndRoleName="Окно игры"
-            targetEndRoleName="Окно правил"
+            targetEndRoleName="Общая игра"
             isLeaf="false"
+            name="Слово"
             isAbstract="false">
             <subsystemMoniker
-              Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef"
-              LastKnownName="Окно правил"
+              Id="c262e020-7cfc-4f78-9ea9-c7396894486a"
+              LastKnownName="Общая игра"
               LastKnownLocation="DesignModelingProject.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="67a3ff1f-da05-44d0-b72b-84fd489ff3f8"
+                  Id="a4da6493-716c-4ae8-887c-d3090c15337c"
                   name="Окно игры"
                   isLeaf="false"
                   isStatic="false"
@@ -262,8 +302,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c3499116-4503-41a2-a615-44e125b1ad08"
-                  name="Окно правил"
+                  Id="1abbcee3-b149-4ca8-b466-c79b546ba334"
+                  name="Общая игра"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -310,28 +350,14 @@
         Id="9f06636e-97dc-4be4-8c9d-82b201d8d14f"
         name="Правила игры"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
-            LastKnownName="Окно игры"
-            LastKnownLocation="DesignModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="388c22f9-ed71-4098-b878-3a713ccf5681"
         name="Меню"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
-            LastKnownName="Окно игры"
-            LastKnownLocation="DesignModelingProject.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <subsystem
@@ -380,45 +406,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="4bd79632-7954-4f6e-89ab-f52a52e78703"
-            isDerived="false"
-            sourceEndRoleName="Окно меню"
-            targetEndRoleName="Окно игры"
-            isLeaf="false"
-            isAbstract="false">
-            <subsystemMoniker
-              Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
-              LastKnownName="Окно игры"
-              LastKnownLocation="DesignModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8ac40832-0e70-4494-8f86-d8f80721ee10"
-                  name="Окно меню"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="67ee27fc-e4b5-4648-8bae-68301a89a654"
-                  name="Окно игры"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </subsystem>
     </packageHasNamedElement>
@@ -437,45 +424,6 @@
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
-          <association
-            Id="5f3c9dfa-008f-473c-acb3-b43acc6f692e"
-            isDerived="false"
-            sourceEndRoleName="Окно правил"
-            targetEndRoleName="Окно игры"
-            isLeaf="false"
-            isAbstract="false">
-            <subsystemMoniker
-              Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
-              LastKnownName="Окно игры"
-              LastKnownLocation="DesignModelingProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="698f55ed-7e22-449c-b317-bf748703ac01"
-                  name="Окно правил"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f4efa44a-9701-47c1-990a-3c94e25244ff"
-                  name="Окно игры"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="905292ae-9417-4504-a087-bb8bc578462d"
             isDerived="false"
@@ -537,6 +485,204 @@
         Id="21b92a90-34a8-4243-8357-93415d72d68e"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cca6cd1b-f6c8-4a2e-b5ec-b2f1db768d8f"
+        name="Изменить время раунда"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
+            LastKnownName="Окно меню"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c89c1c2-b15d-41d5-862a-3f415aa29c5d"
+        name="Изменить макс кол-во очков"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
+            LastKnownName="Окно меню"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+        name="Окно статистики"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="43a77017-d0db-4562-af96-e90b363de5aa"
+            isDerived="false"
+            sourceEndRoleName="Окно статистики"
+            targetEndRoleName="Окно игры"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+              LastKnownName="Окно игры"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="21971c74-e606-45cb-878e-e3fa809086c7"
+                  name="Окно статистики"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f227a857-6a8b-48bc-ad72-53b0d6d424cb"
+                  name="Окно игры"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5791df30-88c3-4705-8490-13c930a3379f"
+        name="Вывод суммы очков"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+            LastKnownName="Окно игры"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="98faeaa8-e843-4ebd-9323-bde57b25b8b8"
+        name="Вывод статистики"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+            LastKnownName="Окно статистики"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5d06ce3-5b4a-4272-815d-af850d2d5619"
+        name="Вывод следующей команды"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+            LastKnownName="Окно статистики"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c262e020-7cfc-4f78-9ea9-c7396894486a"
+        name="Общая игра"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="13f271e5-0dc0-4a87-b455-08011f0af565"
+            isDerived="false"
+            sourceEndRoleName="Общая игра"
+            targetEndRoleName="Окно статистики"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="3c9a70e1-15c1-4233-b2df-8dabd72f11e3"
+              LastKnownName="Окно статистики"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f8eaef7-c297-4c5b-b0d1-1717b5c71acc"
+                  name="Общая игра"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71e428c3-446d-4df6-a284-27b5200e1cdc"
+                  name="Окно статистики"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8239eb0-f2f8-48d3-9b9c-7a6d40dc2ee4"
+        name="Вывод слова"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c262e020-7cfc-4f78-9ea9-c7396894486a"
+            LastKnownName="Общая игра"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba6236c4-3d65-43a5-ba21-8de21f603702"
+        name="Вывод списка команд"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c262e020-7cfc-4f78-9ea9-c7396894486a"
+            LastKnownName="Общая игра"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
