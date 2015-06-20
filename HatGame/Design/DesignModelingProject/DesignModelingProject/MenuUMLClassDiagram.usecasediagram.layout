@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MainMenuUMLClassDiagram">
+  <useCaseModelRootMoniker Id="26e022c8-5f6f-4227-a04f-d0d5d763cb8a" />
+  <nestedChildShapes>
+    <artifactShape Id="e6320ce0-4a89-4177-aa2f-99461981b77a" absoluteBounds="2, 0.5, 1.5, 0.5" customColor="161, 199, 231">
+      <artifactMoniker Id="2a9f7ccf-1391-4b1c-b387-e2db1db3a3a2" LastKnownName="База имен команд" />
+    </artifactShape>
+    <artifactShape Id="3794caf5-ac80-48a2-88d8-3fe78834de97" absoluteBounds="7.5, 0.5, 1.5, 0.5" customColor="161, 199, 231">
+      <artifactMoniker Id="4c7591c4-9c15-4b98-a791-33fe0bba1ebb" LastKnownName="База слов" />
+    </artifactShape>
+    <SubsystemShape Id="6662be77-7040-4007-b946-9681a61c38e6" absoluteBounds="1, 2, 3.5, 2.875" customColor="White">
+      <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+      <nestedChildShapes>
+        <useCaseShape Id="8f791ec0-73f9-4316-97e9-9b1178c0ef06" absoluteBounds="2.125, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="e2ab0b84-1e9c-44ba-bc67-7e3c0651fea5" LastKnownName="Играть" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="1ca22e98-b8d3-43fd-9fcf-a98dac017135" absoluteBounds="1.25, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="f9c60a90-8f4d-4282-ae15-e5322119a3ad" LastKnownName="Меню" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="f430f780-5b1c-4af1-88fe-f847593bb275" absoluteBounds="3.25, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="42fc4e07-f386-4b54-b54b-fa08325f123e" LastKnownName="Правила игры" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="ac6f27f0-0086-47af-930f-f98c18b9d809" absoluteBounds="2.125, 3.25, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="eb63775c-bdb1-4f05-984f-7fb1717fef8a" LastKnownName="Выбрать количество команд" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseDependencyConnector edgePoints="[(2.75 : 2); (2.75 : 1)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="23f10f66-17c1-47c6-a116-fb3b06e739fe" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="6662be77-7040-4007-b946-9681a61c38e6" />
+        <artifactShapeMoniker Id="e6320ce0-4a89-4177-aa2f-99461981b77a" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <SubsystemShape Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" absoluteBounds="6.5, 2, 3.375, 2.875" customColor="White">
+      <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+      <nestedChildShapes>
+        <useCaseShape Id="4e93e42b-fc9a-4445-b736-4548cf51319e" absoluteBounds="7.5, 2.625, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="fae9a674-1a44-4dd3-a532-164f55baebbd" LastKnownName="Переключение слова" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="2c561657-b79b-497b-bb9c-f7a37dd31794" absoluteBounds="7.5, 3.25, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="226c92d0-f4cb-445d-aba9-e30c843e495a" LastKnownName="Подсчет очков" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="07aaf4b0-b4ae-479e-9754-d52214f8b456" absoluteBounds="8.625, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5bc37921-af17-4735-be6c-6279099c1a93" LastKnownName="Правила игры" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="17f5ae90-31a7-4db4-a5ba-2d77c14ddde4" absoluteBounds="6.75, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="44ad93c8-2107-4346-85b2-46383dd00fca" LastKnownName="Меню" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseDependencyConnector edgePoints="[(8.22093023255814 : 2); (8.24418604651163 : 1)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="ed696d58-997d-46d3-a44c-56dda546ba77" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" />
+        <artifactShapeMoniker Id="3794caf5-ac80-48a2-88d8-3fe78834de97" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <SubsystemShape Id="ac92df0b-84c3-4437-8241-c87acf235933" absoluteBounds="1.75, 5.5, 3, 2.5" customColor="White">
+      <subsystemMoniker Id="c2c09610-25aa-4aec-a80c-bff55cc5811e" LastKnownName="Окно меню" />
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.8746852592958 : 4.875); (2.92889624159833 : 5.5)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fb2e2c38-063b-464c-a70d-823306a8e965" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="6662be77-7040-4007-b946-9681a61c38e6" />
+        <SubsystemShapeMoniker Id="ac92df0b-84c3-4437-8241-c87acf235933" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(6.5 : 4.09378959869085); (4.75 : 5.84268083534718)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="92ada1ea-9dc5-4212-91b3-6b9f8c1864c7" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" />
+        <SubsystemShapeMoniker Id="ac92df0b-84c3-4437-8241-c87acf235933" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(3.09636783344634 : 5.5); (3.01955175016951 : 4.875)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8d8645b9-4ec9-45ab-bce8-0d1640a5518c" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="ac92df0b-84c3-4437-8241-c87acf235933" />
+        <SubsystemShapeMoniker Id="6662be77-7040-4007-b946-9681a61c38e6" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(4.75 : 6.07077356479106); (6.5 : 4.42901623821592)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a8827d67-a9eb-414e-b999-4808d3944a45" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="ac92df0b-84c3-4437-8241-c87acf235933" />
+        <SubsystemShapeMoniker Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="ab102c96-c203-4813-98d8-227e612e3e43" absoluteBounds="6.5, 5.5, 3, 2.5" customColor="White">
+      <subsystemMoniker Id="ea0963e1-6527-469b-b043-40b93c2d8983" LastKnownName="Окно правил" />
+      <nestedChildShapes>
+        <useCaseShape Id="018d5e95-e0a6-4947-b8e4-a20a99a6ab36" absoluteBounds="7.5, 6.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="629cddd2-b3fc-422a-93b1-82bbaaacf705" LastKnownName="Вывод правил игры" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(8.18030878329668 : 4.875); (8.17718216733871 : 5.5)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="dde0e38e-188d-4905-b96c-9d2372aebc0d" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" />
+        <SubsystemShapeMoniker Id="ab102c96-c203-4813-98d8-227e612e3e43" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(4.5 : 4.08918262119395); (6.5 : 5.85293621664296)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="f722166e-33dc-493e-b8e0-1f252f1072c9" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="6662be77-7040-4007-b946-9681a61c38e6" />
+        <SubsystemShapeMoniker Id="ab102c96-c203-4813-98d8-227e612e3e43" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(8.03491708300006 : 5.5); (8.05237562450009 : 4.875)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="1361daf3-4dfd-4c74-91ba-cbf0d51416e8" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="ab102c96-c203-4813-98d8-227e612e3e43" />
+        <SubsystemShapeMoniker Id="c3a39489-f4ef-4f0f-af92-307b0aca532f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(6.5 : 6.07092593801959); (4.5 : 4.41487526392756)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="baaab5b4-4975-4618-9489-542ff0fc5278" />
+      <relativeChildShapes />
+      <nodes>
+        <SubsystemShapeMoniker Id="ab102c96-c203-4813-98d8-227e612e3e43" />
+        <SubsystemShapeMoniker Id="6662be77-7040-4007-b946-9681a61c38e6" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="26e022c8-5f6f-4227-a04f-d0d5d763cb8a" name="MainMenuUMLClassDiagram" linkedPackageId="eebe70c5-0e41-417a-84cf-fd4cb0252e47" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2f6d325a-38c6-4157-9777-b370cf8d8e02">
+      <profileInstance Id="558dc6d8-e8eb-4b19-bd20-c9b8150d6da3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c652a5e3-545d-4814-9da2-d5c8d0434b9f">
+      <profileInstance Id="27fc44c1-131b-4649-952f-d2d0e7546230" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" name="Главное окно" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084" />
+        <suppliersInternal>
+          <dependency Id="23f10f66-17c1-47c6-a116-fb3b06e739fe">
+            <artifactMoniker Id="2a9f7ccf-1391-4b1c-b387-e2db1db3a3a2" LastKnownName="База имен команд" />
+            <elementDefinition Id="4f034d8b-d248-49b7-9f57-5ca3ee7b31c9" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="fb2e2c38-063b-464c-a70d-823306a8e965" isDerived="false" sourceEndRoleName="Главное окно" targetEndRoleName="Окно меню" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c2c09610-25aa-4aec-a80c-bff55cc5811e" LastKnownName="Окно меню" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0735444e-1ec8-45c3-bba7-327e81a2914c" name="Главное окно" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="461dbcc0-26a1-46f6-a026-913b3a4b45aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8aa03229-a450-4d21-b803-5c43dada71db" name="Окно меню" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a50122a4-527e-43e2-8feb-4b7ea41370d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb412908-0907-4c63-8c05-e25b5507d46a" />
+          </association>
+          <association Id="f722166e-33dc-493e-b8e0-1f252f1072c9" isDerived="false" sourceEndRoleName="Главное окно" targetEndRoleName="Окно правил" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="ea0963e1-6527-469b-b043-40b93c2d8983" LastKnownName="Окно правил" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3b400ed-5c08-4011-b01c-f5bc0fdccec8" name="Главное окно" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f6b9b770-15ed-46ca-a3a5-232a48750909" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48356e39-aa83-4ee0-9830-cb302ba59939" name="Окно правил" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56b24d13-2c5e-4d71-9244-3a76f59c23f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b596a880-19ba-4dfa-864e-0d33a24570f8" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e2ab0b84-1e9c-44ba-bc67-7e3c0651fea5" name="Играть" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29365b36-e77a-456c-887e-1ae560513392" />
+        <subjects>
+          <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f9c60a90-8f4d-4282-ae15-e5322119a3ad" name="Меню" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="172be4ab-54aa-45ba-8006-0cdc14216631" />
+        <subjects>
+          <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="42fc4e07-f386-4b54-b54b-fa08325f123e" name="Правила игры" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9eb96596-6559-407b-b947-6ecbf4da2abe" />
+        <subjects>
+          <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="eb63775c-bdb1-4f05-984f-7fb1717fef8a" name="Выбрать количество команд" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="62b40b1e-2c31-4d17-81b4-2b24ec48fedd" />
+        <subjects>
+          <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <artifact Id="2a9f7ccf-1391-4b1c-b387-e2db1db3a3a2" name="База имен команд" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e378b5b-8ef4-4673-a839-99faf80e84cc" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" name="Окно игры" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06b97a53-0211-49c6-b70d-8ff28766be8a" />
+        <suppliersInternal>
+          <dependency Id="ed696d58-997d-46d3-a44c-56dda546ba77">
+            <artifactMoniker Id="4c7591c4-9c15-4b98-a791-33fe0bba1ebb" LastKnownName="База слов" />
+            <elementDefinition Id="8a94f301-37ec-4409-877b-70c6e15afb4b" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="92ada1ea-9dc5-4212-91b3-6b9f8c1864c7" isDerived="false" sourceEndRoleName="Окно игры" targetEndRoleName="Окно меню" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c2c09610-25aa-4aec-a80c-bff55cc5811e" LastKnownName="Окно меню" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a316376-7d25-47cc-93e9-4deae6f9f316" name="Окно игры" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="153a0598-c873-4b85-88ad-3f54b3daa180" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="828e7bd4-749f-4f57-8809-2bf6cf3b70df" name="Окно меню" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e0c18497-7804-4386-9b20-dfe58b944811" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8fa9b12e-713f-4a15-be9c-fa890b105d7c" />
+          </association>
+          <association Id="dde0e38e-188d-4905-b96c-9d2372aebc0d" isDerived="false" sourceEndRoleName="Окно игры" targetEndRoleName="Окно правил" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="ea0963e1-6527-469b-b043-40b93c2d8983" LastKnownName="Окно правил" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e08f685-d25a-40bc-9622-6263787ac0f2" name="Окно игры" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67a3ff1f-da05-44d0-b72b-84fd489ff3f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b730d04-3707-4d9f-b1fe-7400a6a63b51" name="Окно правил" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c3499116-4503-41a2-a615-44e125b1ad08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ca52ad4-201d-4a42-9897-ba1c5b859f88" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="fae9a674-1a44-4dd3-a532-164f55baebbd" name="Переключение слова" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e9124a1-5f85-4b3b-a81e-8facff8d248b" />
+        <subjects>
+          <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="226c92d0-f4cb-445d-aba9-e30c843e495a" name="Подсчет очков" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f74cdc4d-1599-43dd-921b-503ef4bb41a9" />
+        <subjects>
+          <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5bc37921-af17-4735-be6c-6279099c1a93" name="Правила игры" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f06636e-97dc-4be4-8c9d-82b201d8d14f" />
+        <subjects>
+          <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="44ad93c8-2107-4346-85b2-46383dd00fca" name="Меню" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="388c22f9-ed71-4098-b878-3a713ccf5681" />
+        <subjects>
+          <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c2c09610-25aa-4aec-a80c-bff55cc5811e" name="Окно меню" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6" />
+        <targetEnds>
+          <association Id="8d8645b9-4ec9-45ab-bce8-0d1640a5518c" isDerived="false" sourceEndRoleName="Окно меню" targetEndRoleName="Главное окно" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58f9634a-86ee-4ecf-8387-303ba754e235" name="Окно меню" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e01dc81f-bceb-4df4-9d35-a3fbd1286c31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4321d4ee-bd14-40d7-8d8a-5c81e00080a8" name="Главное окно" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1dbe1efe-d406-4363-bfb4-3c728ffd7499" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de70af76-ee03-4857-a9b1-b049bea5c7f5" />
+          </association>
+          <association Id="a8827d67-a9eb-414e-b999-4808d3944a45" isDerived="false" sourceEndRoleName="Окно меню" targetEndRoleName="Окно игры" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="731acc0f-fbbc-408c-a61f-a6cf2e8112eb" name="Окно меню" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ac40832-0e70-4494-8f86-d8f80721ee10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2585af3-e3ad-4520-88f8-fd10e11860eb" name="Окно игры" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="67ee27fc-e4b5-4648-8bae-68301a89a654" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4bd79632-7954-4f6e-89ab-f52a52e78703" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="4c7591c4-9c15-4b98-a791-33fe0bba1ebb" name="База слов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eca96fb8-3fc7-42f7-aa51-01d9199f3543" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ea0963e1-6527-469b-b043-40b93c2d8983" name="Окно правил" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef" />
+        <targetEnds>
+          <association Id="1361daf3-4dfd-4c74-91ba-cbf0d51416e8" isDerived="false" sourceEndRoleName="Окно правил" targetEndRoleName="Окно игры" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="e4375c6c-c9af-4cd0-ac85-26b2eba65526" LastKnownName="Окно игры" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c1ec6fa-167f-4aca-962e-e83e774567a5" name="Окно правил" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="698f55ed-7e22-449c-b317-bf748703ac01" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1a1c5b0-22ee-4709-b6b8-14ab0930f367" name="Окно игры" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f4efa44a-9701-47c1-990a-3c94e25244ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f3c9dfa-008f-473c-acb3-b43acc6f692e" />
+          </association>
+          <association Id="baaab5b4-4975-4618-9489-542ff0fc5278" isDerived="false" sourceEndRoleName="Окно правил" targetEndRoleName="Главное окно" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="f598a4a3-2e23-44d8-b81e-cc255c1ba605" LastKnownName="Главное окно" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1df3a0a-d894-4c71-8107-1146d3609b69" name="Окно правил" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a8bd73ae-4153-418b-80df-2464a35e80ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1dd5535-beb4-4337-94f2-33455b5f5005" name="Главное окно" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6687688d-ccef-4234-a9f4-cb7748e35182" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="905292ae-9417-4504-a087-bb8bc578462d" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="629cddd2-b3fc-422a-93b1-82bbaaacf705" name="Вывод правил игры" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9d945bd-a96f-49d5-a9eb-c19fe13613e8" />
+        <subjects>
+          <subsystemMoniker Id="ea0963e1-6527-469b-b043-40b93c2d8983" LastKnownName="Окно правил" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="eebe70c5-0e41-417a-84cf-fd4cb0252e47" name="DesignModelingProject">
+    <elementDefinition Id="5365e507-ec72-4da9-87d4-5a87c9119b41" />
+  </package>
+</useCaseModelRoot>

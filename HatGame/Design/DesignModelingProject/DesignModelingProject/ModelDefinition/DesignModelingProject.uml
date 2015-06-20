@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="5365e507-ec72-4da9-87d4-5a87c9119b41"
+  name="DesignModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+        name="Главное окно"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4f034d8b-d248-49b7-9f57-5ca3ee7b31c9">
+            <artifactMoniker
+              Id="8e378b5b-8ef4-4673-a839-99faf80e84cc"
+              LastKnownName="База имен команд"
+              LastKnownLocation="DesignModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="eb412908-0907-4c63-8c05-e25b5507d46a"
+            isDerived="false"
+            sourceEndRoleName="Главное окно"
+            targetEndRoleName="Окно меню"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
+              LastKnownName="Окно меню"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="461dbcc0-26a1-46f6-a026-913b3a4b45aa"
+                  name="Главное окно"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a50122a4-527e-43e2-8feb-4b7ea41370d7"
+                  name="Окно меню"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b596a880-19ba-4dfa-864e-0d33a24570f8"
+            isDerived="false"
+            sourceEndRoleName="Главное окно"
+            targetEndRoleName="Окно правил"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef"
+              LastKnownName="Окно правил"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6b9b770-15ed-46ca-a3a5-232a48750909"
+                  name="Главное окно"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56b24d13-2c5e-4d71-9244-3a76f59c23f2"
+                  name="Окно правил"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29365b36-e77a-456c-887e-1ae560513392"
+        name="Играть"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+            LastKnownName="Главное окно"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="172be4ab-54aa-45ba-8006-0cdc14216631"
+        name="Меню"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+            LastKnownName="Главное окно"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9eb96596-6559-407b-b947-6ecbf4da2abe"
+        name="Правила игры"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+            LastKnownName="Главное окно"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="62b40b1e-2c31-4d17-81b4-2b24ec48fedd"
+        name="Выбрать количество команд"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+            LastKnownName="Главное окно"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="8e378b5b-8ef4-4673-a839-99faf80e84cc"
+        name="База имен команд"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+        name="Окно игры"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8a94f301-37ec-4409-877b-70c6e15afb4b">
+            <artifactMoniker
+              Id="eca96fb8-3fc7-42f7-aa51-01d9199f3543"
+              LastKnownName="База слов"
+              LastKnownLocation="DesignModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="8fa9b12e-713f-4a15-be9c-fa890b105d7c"
+            isDerived="false"
+            sourceEndRoleName="Окно игры"
+            targetEndRoleName="Окно меню"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
+              LastKnownName="Окно меню"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="153a0598-c873-4b85-88ad-3f54b3daa180"
+                  name="Окно игры"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0c18497-7804-4386-9b20-dfe58b944811"
+                  name="Окно меню"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7ca52ad4-201d-4a42-9897-ba1c5b859f88"
+            isDerived="false"
+            sourceEndRoleName="Окно игры"
+            targetEndRoleName="Окно правил"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef"
+              LastKnownName="Окно правил"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67a3ff1f-da05-44d0-b72b-84fd489ff3f8"
+                  name="Окно игры"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3499116-4503-41a2-a615-44e125b1ad08"
+                  name="Окно правил"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e9124a1-5f85-4b3b-a81e-8facff8d248b"
+        name="Переключение слова"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+            LastKnownName="Окно игры"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f74cdc4d-1599-43dd-921b-503ef4bb41a9"
+        name="Подсчет очков"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+            LastKnownName="Окно игры"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f06636e-97dc-4be4-8c9d-82b201d8d14f"
+        name="Правила игры"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+            LastKnownName="Окно игры"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="388c22f9-ed71-4098-b878-3a713ccf5681"
+        name="Меню"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+            LastKnownName="Окно игры"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="5a9f6200-eddc-456d-821a-e4b47c3b1bd6"
+        name="Окно меню"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="de70af76-ee03-4857-a9b1-b049bea5c7f5"
+            isDerived="false"
+            sourceEndRoleName="Окно меню"
+            targetEndRoleName="Главное окно"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+              LastKnownName="Главное окно"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e01dc81f-bceb-4df4-9d35-a3fbd1286c31"
+                  name="Окно меню"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1dbe1efe-d406-4363-bfb4-3c728ffd7499"
+                  name="Главное окно"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4bd79632-7954-4f6e-89ab-f52a52e78703"
+            isDerived="false"
+            sourceEndRoleName="Окно меню"
+            targetEndRoleName="Окно игры"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+              LastKnownName="Окно игры"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ac40832-0e70-4494-8f86-d8f80721ee10"
+                  name="Окно меню"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67ee27fc-e4b5-4648-8bae-68301a89a654"
+                  name="Окно игры"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="eca96fb8-3fc7-42f7-aa51-01d9199f3543"
+        name="База слов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef"
+        name="Окно правил"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="5f3c9dfa-008f-473c-acb3-b43acc6f692e"
+            isDerived="false"
+            sourceEndRoleName="Окно правил"
+            targetEndRoleName="Окно игры"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="06b97a53-0211-49c6-b70d-8ff28766be8a"
+              LastKnownName="Окно игры"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="698f55ed-7e22-449c-b317-bf748703ac01"
+                  name="Окно правил"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4efa44a-9701-47c1-990a-3c94e25244ff"
+                  name="Окно игры"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="905292ae-9417-4504-a087-bb8bc578462d"
+            isDerived="false"
+            sourceEndRoleName="Окно правил"
+            targetEndRoleName="Главное окно"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="4f4e2916-4302-4a25-a3c4-5c18bc58b084"
+              LastKnownName="Главное окно"
+              LastKnownLocation="DesignModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8bd73ae-4153-418b-80df-2464a35e80ec"
+                  name="Окно правил"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6687688d-ccef-4234-a9f4-cb7748e35182"
+                  name="Главное окно"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e9d945bd-a96f-49d5-a9eb-c19fe13613e8"
+        name="Вывод правил игры"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="a80b07cb-2d0c-4ec7-b127-28f484bbe1ef"
+            LastKnownName="Окно правил"
+            LastKnownLocation="DesignModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21b92a90-34a8-4243-8357-93415d72d68e"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
