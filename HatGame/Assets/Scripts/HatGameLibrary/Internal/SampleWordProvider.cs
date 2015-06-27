@@ -1,4 +1,5 @@
-﻿using HatGameLibrary.Interfaces;
+﻿using System;
+using HatGameLibrary.Interfaces;
 
 namespace HatGameLibrary.Internal
 {
@@ -6,7 +7,16 @@ namespace HatGameLibrary.Internal
     {
         public string GetNextWord()
         {
-            return "sample";
+		Random Rand = new Random();
+		string[] Words = new string[]
+			{
+				"Surprise Mazafaka :)",
+				"Табуретка",
+				"Зарница",
+				"Олина Попа",
+				"Мешок"
+			};
+		return Words[Rand.Next(0,4)];
         }
     }
 }

@@ -3,65 +3,67 @@ using HatGameLibrary.Interfaces;
 
 namespace HatGameLibrary.Internal
 {
-    internal class HatGame : IHatGame
-    {
-        private readonly IGameView gameView;
-        private readonly IWordProvider wordProvider;
+	internal class HatGame : IHatGame
+	{
+		private readonly IGameView gameView;
+		private readonly IWordProvider wordProvider;
 
-        private TimeSpan lastTime;
-        private int points;
+		private TimeSpan lastTime;
+		private int points;
 
-        public HatGame(IGameView gameView, IWordProvider wordProvider)
-        {
-            this.gameView = gameView;
-            this.wordProvider = wordProvider;
-        }
+		public HatGame(IGameView gameView, IWordProvider wordProvider)
+		{
+			this.gameView = gameView;
+			this.wordProvider = wordProvider;
+		}
 
-        public void BeginGame()
-        {
-            Reset();
+		public void BeginGame()
+		{
+			Reset();
 
-            gameView.Guessed += Guessed;
-            gameView.NotGuessed += NotGuessed;
-        }
+			gameView.Guessed += Guessed;
+			gameView.NotGuessed += NotGuessed;
+		}
 
-        public void StopGame()
-        {
-            Reset();
+		public void StopGame()
+		{
+			Reset();
 
-            gameView.Guessed -= Guessed;
-            gameView.NotGuessed -= NotGuessed;
-        }
+			gameView.Guessed -= Guessed;
+			gameView.NotGuessed -= NotGuessed;
+		}
 
-        public void Update(TimeSpan deltaTime)
-        {
-            lastTime -= deltaTime;
-            gameView.LastTime = lastTime;
-        }
+		public void Update(TimeSpan deltaTime)
+		{
+			lastTime -= deltaTime;
+			gameView.LastTime = lastTime;
+		}
 
-        private void Guessed()
-        {
-            points++;
-            gameView.Points = points;
+		private void Guessed()
+		{
+			points++;
+			gameView.Points = points;
 
-            ApplyNextWord();
-        }
+			ApplyNextWord();
+		}
 
-        private void NotGuessed()
-        {
-            ApplyNextWord();
-        }
+		private void NotGuessed()
+		{
+			points--;
+			gameView.Points = points;
+			ApplyNextWord();
+		}
 
-        private void ApplyNextWord()
-        {
-            string nextWord = wordProvider.GetNextWord();
-            gameView.WordArea = nextWord;
-        }
+		private void ApplyNextWord()
+		{
+			string nextWord = wordProvider.GetNextWord();
+			gameView.WordArea = nextWord;
+		}
 
-        private void Reset()
-        {
-            lastTime = TimeSpan.FromSeconds(40);
-            points = 0;
-        }
-    }
+		private void Reset()
+		{
+			lastTime = TimeSpan.FromSeconds(40);
+			points = 0;
+		}
+	}
 }
