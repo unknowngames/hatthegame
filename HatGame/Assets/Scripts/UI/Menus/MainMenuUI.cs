@@ -28,6 +28,8 @@ namespace Assets.Scripts.UI.Menus
                     comboBox.ScrollList.Add (i, i.ToString ());
                 }
                 comboBox.ScrollList.OnSelectedChanged += ChangeHeadButton;
+				ChangeHeadButton (comboBox.ScrollList.Items[1]);
+				UpdateTeamsList();
                // UpdateTeamsList();
             }
 
@@ -51,9 +53,11 @@ namespace Assets.Scripts.UI.Menus
             {
                 ListItem item = comboBox.ScrollList.Items[i];
                 Team team = new Team ("1", "2", item.Button.GetComponentInChildren<Image> ());
-                teamsScrollList.Add (team, item.Value.ToString ());
+				teamsScrollList.Add (team, "Player1", "Player2", item.Button.GetComponentInChildren<Image> ().sprite);
             }
         }
+
+
     }
 
     public class Team
@@ -61,6 +65,7 @@ namespace Assets.Scripts.UI.Menus
         private string playerOne;
         private string playerTwo;
         private Image teamIcon;
+		private int scores = 0;
 
         public Team (string one, string two, Image icon)
         {
@@ -104,6 +109,18 @@ namespace Assets.Scripts.UI.Menus
                 teamIcon = value;
             }
         }
+
+		public int Scores
+		{
+			get 
+			{
+				return scores;
+			}
+			set 
+			{
+				scores = value;
+			}
+		}
     }
 
 }

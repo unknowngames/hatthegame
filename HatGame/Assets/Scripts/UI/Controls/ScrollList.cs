@@ -72,18 +72,19 @@ namespace Assets._scripts.UI.Controls
             }
         }
 
-        public int Add (Object value, string text, Sprite image)
+		public int Add (Object value, string text, string text2, Sprite image)
         {
             if (IsPrefab(listItemPrefab))
             {
                 GameObject instance = InstantiateListItem(listItemPrefab);
                 if (instance != null)
                 {
-                    TextAndImageScrollableListItem scrollableListItem = instance.GetComponent<TextAndImageScrollableListItem>();
+					TwoTextAndImageScrollElement scrollableListItem = instance.GetComponent<TwoTextAndImageScrollElement>();
                     if (scrollableListItem != null)
                     {
                         scrollableListItem.Value = value;
-                        scrollableListItem.Text = text;
+                        scrollableListItem.Text1 = text;
+						scrollableListItem.Text2 = text2;
                         scrollableListItem.Image = image;
 
                         ListItem listItem = instance.GetComponent<ListItem>();
@@ -190,7 +191,7 @@ namespace Assets._scripts.UI.Controls
 
         private void SetScrollBarVisibility ()
         {
-           if (listItemPrefab != null)
+			if (listItemPrefab != null && transform.FindChild("ScrollBar") != null)
             {
                 if (Count == 0)
                 {
