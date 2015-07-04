@@ -2,10 +2,10 @@
 
 namespace HatGameLibrary.Interfaces
 {
-    public interface IHatGame
-    {
-        void BeginGame();
-        void StopGame();
-        void Update(TimeSpan deltaTime);
-    }
+	public interface IHatGame
+	{
+		void BeginGame();
+		void StopGame();
+		void Update(TimeSpan deltaTime);
+	}
 }

@@ -10,7 +10,6 @@ namespace Assets.Scripts.HatGameUnity
 	public class HatGame : MonoBehaviour
 	{
 		[SerializeField] private GameView gameView;
-		
 
 		private static IHatGame hatGame;
 
