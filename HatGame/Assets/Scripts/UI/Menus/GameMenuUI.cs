@@ -29,9 +29,12 @@ namespace Assets.Scripts.UI.Menus
 		void OnEnable()
 		{
 			base.OnEnable ();
-			player1.text = currentTeam.PlayerOne;
-			player2.text = currentTeam.PlayerTwo;
-			icon.sprite = currentTeam.TeamIcon.sprite;
+			if (currentTeam != null) 
+			{
+				player1.text = currentTeam.PlayerOne;
+				player2.text = currentTeam.PlayerTwo;
+				icon.sprite = currentTeam.TeamIcon.sprite;
+			}
 		}
 
 		void Update()

@@ -7,6 +7,7 @@ using Assets._scripts.UI.Base;
 using Assets._scripts.UI.Controls;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace Assets.Scripts.UI.Menus
 {
@@ -17,6 +18,17 @@ namespace Assets.Scripts.UI.Menus
 
         [SerializeField]
         private ScrollList teamsScrollList;
+		private Team currentTeam;
+		[SerializeField]
+		public NextTeamEvent OnNextTeamEvent;
+
+		[Serializable]
+		public class NextTeamEvent : UnityEvent <Team> {}
+
+		public void OnNextTeam()
+		{
+			OnNextTeamEvent.Invoke (currentTeam);
+		}
 
         private void OnEnable ()
         {
@@ -52,75 +64,13 @@ namespace Assets.Scripts.UI.Menus
             for(int i=0; i < count; i++)
             {
                 ListItem item = comboBox.ScrollList.Items[i];
-                Team team = new Team ("1", "2", item.Button.GetComponentInChildren<Image> ());
-				teamsScrollList.Add (team, "Player1", "Player2", item.Button.GetComponentInChildren<Image> ().sprite);
+				Team team = new Team ("Player1", "Player2", item.Button.GetComponentInChildren<Image> (), i+1);
+				teamsScrollList.Add (team, team.PlayerOne, team.PlayerTwo, item.Button.GetComponentInChildren<Image> ().sprite);
             }
+			currentTeam = teamsScrollList.Items [0].Value as Team;
         }
 
 
-    }
-
-    public class Team
-    {
-        private string playerOne;
-        private string playerTwo;
-        private Image teamIcon;
-		private int scores = 0;
-
-        public Team (string one, string two, Image icon)
-        {
-            PlayerOne = one;
-            PlayerTwo = two;
-            TeamIcon = icon;
-        }
-
-        public string PlayerOne
-        {
-            get
-            {
-                return playerOne;
-            }
-            set
-            {
-                playerOne = value;
-            }
-        }
-
-        public string PlayerTwo
-        {
-            get
-            {
-                return playerTwo;
-            }
-            set
-            {
-                playerTwo = value;
-            }
-        }
-
-        public Image TeamIcon
-        {
-            get
-            {
-                return teamIcon;
-            }
-            set
-            {
-                teamIcon = value;
-            }
-        }
-
-		public int Scores
-		{
-			get 
-			{
-				return scores;
-			}
-			set 
-			{
-				scores = value;
-			}
-		}
     }
 
 }
