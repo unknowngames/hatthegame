@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Text;
+using Assets.Scripts.HatGameUnity;
 using Assets._scripts.UI.Base;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
-using Assets.Scripts.HatGameUnity;
 
 namespace Assets.Scripts.UI.Menus
 {
@@ -20,8 +20,15 @@ namespace Assets.Scripts.UI.Menus
 		Text scores;
 		[SerializeField]
 		GameView gameView;
+        [SerializeField]
+        public EndRoundEvent OnEndRoundEvent;
 
-		public void SetCurrentTeam(Team team)
+
+        [Serializable]
+        public class EndRoundEvent : UnityEvent<string> { }
+
+        
+        public void SetCurrentTeam(Team team)
 		{
 			currentTeam = team;
 		}
@@ -43,7 +50,17 @@ namespace Assets.Scripts.UI.Menus
 			{
 				scores.text = (currentTeam.Scores + gameView.Points).ToString();
 			}
+            if (gameView != null && gameView.LastTime.Seconds <= 0)
+		    {
+                OnEndRound(gameView.WordArea);
+		    }
 		}
+
+        private void OnEndRound (string text)
+        {
+            OnEndRoundEvent.Invoke(text);
+        }
+
 
     }
 }

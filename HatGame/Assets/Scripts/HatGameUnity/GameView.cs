@@ -16,6 +16,8 @@ namespace Assets.Scripts.HatGameUnity
 		private int points = 0;
 		private TimeSpan lastTime;
 
+	    public bool IsStarted { get; set; }
+
 		public string WordArea
 		{
 			get { return wordArea; }
@@ -42,7 +44,7 @@ namespace Assets.Scripts.HatGameUnity
 			set
 			{
 				lastTime = value;
-				timeLeft.text = "Time Left: " + lastTime;
+			    timeLeft.text = "Time Left: " + lastTime.Minutes + ":" + lastTime.Seconds;
 			}
 		}
 

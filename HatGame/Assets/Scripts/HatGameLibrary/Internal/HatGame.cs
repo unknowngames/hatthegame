@@ -35,8 +35,15 @@ namespace HatGameLibrary.Internal
 
 		public void Update(TimeSpan deltaTime)
 		{
-			lastTime -= deltaTime;
-			gameView.LastTime = lastTime;
+            if ((lastTime - deltaTime) > TimeSpan.Zero)
+		    {
+                lastTime -= deltaTime;
+                gameView.LastTime = lastTime;
+		    }
+            else
+            {
+                StopGame ();
+            }
 		}
 
 		private void Guessed()
@@ -62,7 +69,7 @@ namespace HatGameLibrary.Internal
 
 		private void Reset()
 		{
-			lastTime = TimeSpan.FromSeconds(40);
+			lastTime = TimeSpan.FromSeconds(10);
 			points = 0;
 		}
 	}

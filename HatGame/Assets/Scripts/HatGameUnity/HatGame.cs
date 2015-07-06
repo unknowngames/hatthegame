@@ -13,7 +13,7 @@ namespace Assets.Scripts.HatGameUnity
 
 		private static IHatGame hatGame;
 
-		private void Start()
+		public void BeginGame()
 		{
 			IWordProvider wordProvider = WordProviderBuilder.Create();
 			hatGame = HatGameBuilder.Create(gameView, wordProvider);
@@ -22,8 +22,11 @@ namespace Assets.Scripts.HatGameUnity
 
 		void Update()
 		{
-			var leftTime = TimeSpan.FromSeconds(Time.deltaTime);
-			hatGame.Update(leftTime);
+		    if (gameView.IsStarted)
+		    {
+		        var leftTime = TimeSpan.FromSeconds (Time.deltaTime);
+		        hatGame.Update (leftTime);
+		    }
 		}
 
 		public void SetPositiveButton()
