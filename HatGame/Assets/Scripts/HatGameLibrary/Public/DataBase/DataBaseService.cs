@@ -2,8 +2,11 @@
 using System.Collections;
 using System.IO;
 #endif
-using System;
+
+// ReSharper disable once RedundantUsingDirective
+using UnityEngine;
 using SQLite4Unity3d;
+using Random = System.Random;
 
 namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 {
@@ -11,10 +14,10 @@ namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 	{
 		private SQLiteConnection _connection;
 
-		public DataBaseService(string DataBaseName)
+        public DataBaseService(string DatabaseName)
 		{
 #if UNITY_EDITOR
-			var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DataBaseName);
+            var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DatabaseName);
 #else
 			// check if file exists in Application.persistentDataPath
 			var filepath = string.Format("{0}/{1}", Application.persistentDataPath, DatabaseName);
