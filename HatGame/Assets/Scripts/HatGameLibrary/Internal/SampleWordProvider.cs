@@ -15,17 +15,6 @@ namespace HatGameLibrary.Internal
 		public string GetNextWord()
 		{
 			return dataBaseService.GetWord();
-
-// 			Random Rand = new Random();
-// 			string[] Words = new string[]
-// 			{
-// 				"Surprise Mazafaka :)",
-// 				"Табуретка",
-// 				"Зарница",
-// 				"Олина Попа",
-// 				"Мешок"
-// 			};
-// 			return Words[Rand.Next(0, 4)];
 		}
 	}
 }

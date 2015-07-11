@@ -14,10 +14,10 @@ namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 	{
 		private SQLiteConnection _connection;
 
-        public DataBaseService(string DatabaseName)
+		public DataBaseService(string DatabaseName)
 		{
 #if UNITY_EDITOR
-            var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DatabaseName);
+			var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DatabaseName);
 #else
 			// check if file exists in Application.persistentDataPath
 			var filepath = string.Format("{0}/{1}", Application.persistentDataPath, DatabaseName);
@@ -57,14 +57,14 @@ namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 
 		public void CreateDB()
 		{
-			
+
 		}
 
 		public string GetWord()
 		{
 			Random rnd = new Random();
 			int ramdomId = rnd.Next(1, 14000);
-			return _connection.Table<words>().Where(x => x.id == ramdomId).First().ToString();
+			return _connection.Table<Words>().Where(x => x.id == ramdomId).First().ToString();
 		}
 	}
 }

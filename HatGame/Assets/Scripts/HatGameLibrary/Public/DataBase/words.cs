@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 {
-	class words
+	class Words
 	{
 		[PrimaryKey, AutoIncrement]
 		public int id { get; set; }
