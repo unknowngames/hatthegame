@@ -59,7 +59,9 @@ namespace Assets.Scripts.HatGameLibrary.Public.DataBase
 
 		public string GetWord()
 		{
-			return String.Empty;
+			Random rnd = new Random();
+			int ramdomId = rnd.Next(1, 14000);
+			return _connection.Table<words>().Where(x => x.id == ramdomId).First().ToString();
 		}
 	}
 }
